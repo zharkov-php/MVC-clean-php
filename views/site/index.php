@@ -19,7 +19,7 @@
                                 <td> 1<br></td>
                                 <td> 2<br></td>
                                 <td> 3<br></td>
-                                <td> 4<button type="button" class="btn btn-primary"><a href="#">
+                                <td> 4<button type="button" class="btn btn-primary"><a href="task/view">
                                             <font color="white">...</font>
                                         </a></button<br></td>
 
