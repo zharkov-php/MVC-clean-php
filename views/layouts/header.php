@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                                 <li class="active"><a href="#">Создай новую задачу</a></li>
-
+                            <li><a href="/tz">Задание от BeeJee</a></li>
                 
                 
                             </ul>

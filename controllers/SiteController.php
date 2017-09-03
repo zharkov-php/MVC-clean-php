@@ -31,5 +31,13 @@ class SiteController {
             require_once(ROOT . '/views/site/test.php');
             return true;
      }
+
+    public function actionTz()
+    {
+
+        require_once(ROOT . '/views/site/tz.php');
+        return true;
+    }
+
  
  } 

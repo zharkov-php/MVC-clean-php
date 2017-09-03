@@ -8,6 +8,6 @@
 
 return array (
         'test' => 'site/test', //my test
-
+        'tz' => 'site/tz', //action from task-home at BeeJee
         '' => 'site/index',//Main
     ); 
