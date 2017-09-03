@@ -8,7 +8,7 @@
 
 return array(
         'host' => 'localhost',
-        'dbname' => 'hello',
-        'user' => 'hello',
-        'password' => 'hello',
+        'dbname' => 'beejee',
+        'user' => 'root',
+        'password' => '',
     ); 

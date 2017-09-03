@@ -6,15 +6,15 @@
  * Time: 13:18
  */
 
-
+include_once ROOT . '/models/Task.php';
 
 
 class TaskController
  {
 
-        public function actionView()
+        public function actionView($taskId)
      {
-
+                $tasks = Task::getTaskById($taskId);
                 require_once(ROOT . '/views/task/view.php');
                 return true;
      }

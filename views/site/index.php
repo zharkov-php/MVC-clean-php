@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
-    
-    <div class="container-fluid">
 
+    <div class="container-fluid">
+<?php foreach ($latestTasks as $task): ?>
                 <table class="table table-hover">
                         <thead>
                         <tr>
@@ -15,19 +15,19 @@
                         </thead>
                         <tbody>
                         <tr>
-                                <td><img src="/template/images/19621036_239521669887890_1208747178532153914_o.jpg" class="img-thumbnail" alt="Cinque Terre" width="100" height="100"></td>
-                                <td> 1<br></td>
-                                <td> 2<br></td>
-                                <td> 3<br></td>
-                                <td> 4<button type="button" class="btn btn-primary"><a href="task/view">
+                                <td><img src="/template/images/<?php echo $task['image'];?>" class="img-thumbnail" alt="Cinque Terre" width="100" height="100"></td>
+                                <td> <?php echo $task['name'];?><br></td>
+                                <td> <?php echo $task['email'];?><br></td>
+                                <td><?php echo $task['task'];?><br></td>
+                                <td> <?php echo $task['status'];?><button type="button" class="btn btn-primary"><a href="/task/<?php echo $task['id'];?>">
                                             <font color="white">...</font>
                                         </a></button<br></td>
 
                             </tr>
-            
+
                         </tbody>
                     </table>
-
+<?php endforeach; ?>
     </div>
     
 

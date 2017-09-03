@@ -7,6 +7,7 @@
  */
 
 return array (
+        'task/([0-9]+)' => 'task/view/$1',
         'test' => 'site/test', //my test
         'tz' => 'site/tz', //action from task-home at BeeJee
         'task/view' => 'task/view',

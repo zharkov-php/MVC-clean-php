@@ -14,17 +14,17 @@
             <h2>Panel Heading</h2>
             <div class="panel panel-default">
                     <div class="panel-heading">
-                            <p>Name: </p>
-                            <p>Email: </p>
+                            <p><?php echo $tasks['name'];?></p>
+                            <p><?php echo $tasks['email'];?></p>
             
                         </div>
                     <div class="panel-body">
             
                             <div class="row">
                                     <div class="col-sm-4">
-                                            <img src="/template/images/19621036_239521669887890_1208747178532153914_o.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+                                            <img src="/template/images/<?php echo $tasks['image'];?>" class="img-circle" alt="Cinque Te" width="304" height="236">
                                         </div>
-                                    <div class="col-sm-8"></div>
+                                    <div class="col-sm-8"><?php echo $tasks['task'];?></div>
                                 </div>
                         </div>
                 </div>

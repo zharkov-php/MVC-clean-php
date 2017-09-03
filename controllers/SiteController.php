@@ -6,15 +6,16 @@
  * Time: 12:16
  */
 
-//include_once ROOT . '/models/Task.php';
+include_once ROOT . '/models/Task.php';
 
 
 class SiteController {
 
     public function actionIndex()
  {
- 
 
+     $latestTasks = array();
+     $latestTasks = Task::getLatestTasks();
      require_once(ROOT . '/views/site/index.php');
 
      return true;
